@@ -1,0 +1,53 @@
+.nav{
+    padding:1rem 2rem;
+}
+.nav_container{
+    display: flex;
+    justify-content: space-between;
+}
+.nav_name{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:0.5rem;
+    cursor:pointer;
+    color: #0C42CD;;
+}
+.nav_name p{
+    font-size: 1.3rem;
+    color: #0C42CD;
+    font-weight: 500;
+}
+.nav_name img{
+    width:26px;
+    height: 26px;
+}
+.nav_menu{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:2rem;
+}
+.nav_menu ul li{
+    list-style-type: none;
+}
+.nav_menu ul li a{
+    text-decoration: none;
+    color:black;
+}
+.nav_container .menu , .nav_container .close{
+    display: none;
+}
+.show-menu {
+    display: block !important;
+}
+@media screen and (max-width:650px)
+{
+    .nav_menu {
+        display: none;
+    }
+    .nav_container .menu , .nav_container .close{
+        display: block;
+        cursor: pointer;
+    }
+}
